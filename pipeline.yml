@@ -136,11 +136,14 @@ jobs:
       OPS_MGR_HOST: ((ops_mgr_host))
       OPS_MGR_USR: ((ops_mgr_usr))
       OPS_MGR_PWD: ((ops_mgr_pwd))
-      SINGLETON_JOBS_AZ: ((singleton_jobs_az))
+      SINGLETON_JOB_AZ: ((singleton_jobs_az))
       OTHER_AZS: ((other_azs))
       NETWORK_NAME: ((network_name))
       cf_api_endpoint: ((api_endpoint))
       SKIP_CERT_VERIFY: ((skip_cert_verify))
+      SKIP_CERT_SPLUNK_VERIFY: ((skip_cert_splunk_verify))
+      SPLUNK_EVENT_COLLECTOR_TOKEN: ((event_collector_url))
+      SPLUNK_HTTP_EVENT_COLLECTOR_URL: ((event_collector_token))
 
 - name: disable-errands
   plan:
